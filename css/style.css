@@ -1,0 +1,153 @@
+body{
+        margin: 0px;
+        padding: 20px;
+    }
+
+h1 {
+color: #1C2833;
+font-family: roboto;
+font-size: 34px;
+font-weight: bold;
+margin-top: 20px;
+margin-bottom: 20px;
+
+}
+
+h2 {
+color: #566573;
+font-family: roboto;
+font-size: 28px;
+font-weight: bold;
+margin-top: 20px;
+margin-bottom: 20px;
+
+}
+
+h3 {
+color: #2E4053;
+font-family: roboto;
+font-size: 24px;
+font-weight: bold;
+margin-top: 20px;
+margin-bottom: 20px;
+
+}
+
+a {
+    display: inline;
+}
+
+.single-goods {
+    width: 300px;
+    height: 400px;
+    border: 1px solid black;
+    margin: 10px;
+    float: left;
+    text-align: center;
+}
+
+.single-goods button {
+
+    margin: 20px auto;
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    padding: 2px 16px;
+    height: 38px;
+    min-width: 96px;
+    min-height: 38px;
+    border: none;
+    color: #fff;
+    background-color: rgb(88, 101, 242);
+    transition: background-color .17s ease,color .17s ease;
+    :hover {
+        background-color: rgb(71, 82, 196);
+
+
+    }
+}
+
+
+
+.moving_btn {
+
+    margin: 20px auto;
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    padding: 2px 16px;
+    height: 38px;
+    min-width: 96px;
+    min-height: 38px;
+    border: none;
+    color: #fff;
+    background-color: rgb(88, 101, 242);
+    transition: background-color .17s ease,color .17s ease;
+    :hover {
+        background-color: rgb(71, 82, 196);
+
+
+    }
+}
+
+ .name_prod  {
+  background-color: #f44336;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 40px;
+ 
+}
+
+ .move_to_basket  {
+  background-color: #32CD32;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 40px;
+ 
+}
+
+
+
+.single-goods img {
+    margin-left: 50px;
+}
+
+#table-basket {
+
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 60%;
+}
+
+#table-basket td, #table-basket th {
+    border: 1px solid #ddd;
+    padding: 8px;
+
+}
+
+#table-basket th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #ABB2B9;
+  color: white;
+}
+
+
+
+
+

@@ -2,28 +2,28 @@
 
 $data = [
     1=> [
-        "name" => "apple",
+        "name" => "APPLE",
         "price" => 12,
         "description" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
         "image" => "images/2.jpg"
    ],
 
     2 => [
-        "name" => "strawberry",
+        "name" => "STRAWBERRY",
         "price" => 10,
         "description" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
         "image" => "images/1.jpg"
     ],
 
     3 => [
-        "name" => "lemon",
+        "name" => "LEMON",
         "price" => 10,
         "description" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
         "image" => "images/3.jpg"
     ],
 
     4 => [
-        "name" => "grapes",
+        "name" => "GRAPES",
         "price" => 14,
         "description" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
         "image" => "images/4.jpg"

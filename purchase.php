@@ -1,8 +1,9 @@
 <?php
 
 session_start();
+ 
 
-$key = filter_input(INPUT_POST, 'key');
+$key = filter_input(INPUT_GET, 'key');
 
 if (isset($_SESSION['cart'])) {  //if I have smth in the session - execute it
     $cart = $_SESSION['cart'];
