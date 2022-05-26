@@ -1,13 +1,42 @@
 <?php
-session_start();
-include_once 'data.php';
-
+include_once './config.php';
 
 if (isset($_SESSION['cart'])) {
     $cart = $_SESSION['cart'];
 } else {
     $cart = [];
 }
+
+$current_page = filter_input(INPUT_GET, 'page');
+
+if (!$current_page) {
+    $current_page = 0;
+}
+
+$offset = $current_page * amount;
+
+if ($current_page > 1) {
+    $previous = $current_page - 1;
+} else {
+    $previous = 0;
+}
+$next = $current_page + 1;
+
+$loaded = load_goods($current_page);
+
+if (isset($_SESSION['cart'])) {
+    $cart = $_SESSION['cart'];
+} else {
+    $cart = [];
+}
+
+$amount = 0;
+foreach ($cart as $count) {
+    $amount += $count;
+}
+
+
+$key = filter_input(INPUT_GET, 'key');
 ?>
 <!DOCTYPE html>
 <html>
@@ -19,6 +48,21 @@ if (isset($_SESSION['cart'])) {
 
     </head>
     <body>
+        <div id="header">
+            <div class="shopping_cart_icon">
+                <a href="cart.php" title="Check my Shopping Bag"><img src="https://img.icons8.com/ios/50/000000/shopping-cart.png"/></a>
+                <?= $amount ?>
+
+                <a href="complete_purchase.php" title="Complete my Purchase"><img src="https://img.icons8.com/ios-filled/50/000000/return-purchase.png"/></a><br><br>
+            </div>
+            <div class="logo">
+                <a href="index.php"><img src="images/lg.png"></a>
+            </div>
+            <div class="slogan">
+                <h1>GreenShop</h1>
+                <h2>Enjoy spring freshness whole year</h2>
+            </div>
+        </div>
         <h1>Shopping Basket</h1>
         <table id="table-basket">
             <tr>
@@ -44,22 +88,24 @@ if (isset($_SESSION['cart'])) {
                     <td><?= $quantity ?></td>
                     <td><?= $subtotal ?></td>
                     <td>
-                        <a href="change_order.php?key=<?=$key?>&changing=1"><button> + </button></a>
-                        <a href="change_order.php?key=<?=$key?>&changing=-1"><button> —  </button></a>
+                        <a href="change_order.php?key=<?= $key ?>&changing=1"><button> + </button></a>
+                        <a href="change_order.php?key=<?= $key ?>&changing=-1"><button> —  </button></a>
                     </td>
-                    
+
                 </tr>
-            <?php }  
+            <?php }
             ?>
-                <tr>
-                    <td>Total Price</td>
-                    <td></td>
-                    <td><?= $total ?></td>
-                    <td></td>
-                </tr>
-                
+            <tr>
+                <td>Total Price</td>
+                <td></td>
+                <td><?= $total ?></td>
+                <td></td>
+            </tr>
+
         </table>
-        <br>
+
+
+
         <br>
         <a href="complete_purchase.php"><button class="moving_btn">Complete Purchase</button></a>
         <br>

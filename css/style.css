@@ -1,35 +1,38 @@
 body{
-        margin: 0px;
-        padding: 20px;
-    }
+    margin: 0px;
+    padding: 20px;
+}
 
 h1 {
-color: #1C2833;
-font-family: roboto;
-font-size: 34px;
-font-weight: bold;
-margin-top: 20px;
-margin-bottom: 20px;
+    color: #1C2833;
+    font-family: roboto;
+    font-size: 34px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-shadow: 0px 2px 2px rgba(0,0,0,0.35);
 
 }
 
 h2 {
-color: #566573;
-font-family: roboto;
-font-size: 28px;
-font-weight: bold;
-margin-top: 20px;
-margin-bottom: 20px;
+    color: #566573;
+    font-family: roboto;
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-shadow: 0px 2px 2px rgba(0,0,0,0.35);
 
 }
 
 h3 {
-color: #2E4053;
-font-family: roboto;
-font-size: 24px;
-font-weight: bold;
-margin-top: 20px;
-margin-bottom: 20px;
+    color: #2E4053;
+    font-family: roboto;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
 
 }
 
@@ -38,12 +41,14 @@ a {
 }
 
 .single-goods {
-    width: 300px;
-    height: 400px;
+    width: 25%;
+    height: 450px;
     border: 1px solid black;
     margin: 10px;
     float: left;
     text-align: center;
+    display: block;
+    
 }
 
 .single-goods button {
@@ -60,6 +65,7 @@ a {
     height: 38px;
     min-width: 96px;
     min-height: 38px;
+    text-shadow: 0px 2px 2px rgba(0,0,0,0.35);
     border: none;
     color: #fff;
     background-color: rgb(88, 101, 242);
@@ -89,35 +95,58 @@ a {
     min-height: 38px;
     border: none;
     color: #fff;
+    background-color: #6dce56;
+    text-shadow: 0px 2px 2px rgba(0,0,0,0.35);
+}
+
+.grey_btn {
+
+    margin: 20px auto;
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    padding: 2px 16px;
+    height: 28px;
+    min-width: 86px;
+    min-height: 28px;
+    border: none;
+    color: #fff;
+    background-color: #cccccc;
+    text-shadow: 0px 2px 2px rgba(0,0,0,0.35);
+}
+
+
+
+
+
+.name_prod  {
+   
+    color: black;
+    padding: 5px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+    border-radius: 3px;
+    text-shadow: 2px 2px 2px rgba(169,174,176,0.56);
+
+}
+
+.move_to_basket  {
     background-color: rgb(88, 101, 242);
-    transition: background-color .17s ease,color .17s ease;
-    :hover {
-        background-color: rgb(71, 82, 196);
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+    border-radius: 3px;
+    text-shadow: 0px 2px 2px rgba(0,0,0,0.35);
 
-
-    }
-}
-
- .name_prod  {
-  background-color: #f44336;
-  color: white;
-  padding: 14px 25px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  margin-top: 40px;
- 
-}
-
- .move_to_basket  {
-  background-color: #32CD32;
-  color: white;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  margin-top: 40px;
- 
 }
 
 
@@ -140,14 +169,73 @@ a {
 }
 
 #table-basket th {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  text-align: left;
-  background-color: #ABB2B9;
-  color: white;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #ABB2B9;
+    color: white;
 }
 
 
+.next_prev_page {
+    text-align: left;
+    width: 100%;
+    height: 25px;
+    margin: 10px;
+}
+
+.clear {
+    clear: both;
+}
+
+.container {
+    overflow: hidden;
+    margin: 10px;
+}
+
+.cart-goods {
+    width: 50%;
+    height: 600px;
+    margin: 10px;
+    float: left;
+    text-align: left;
+    display: block;
+}
 
 
+.shopping_cart_icon {
+    width: 15%;
+    height: 50px;
+    margin: 10px;
+    float: right;
+    text-align: right;
+    display: block;
+}
+
+.slogan {
+    width: 35%;
+    height: 150px;
+    float: left;
+    
+}
+
+.logo {
+   width: 25%;
+   float: left;
+}
+
+#header {
+    overflow: hidden;
+    width: 100%;
+    height: 200px;
+}
+
+#footer {
+    margin: 60px 0;
+    overflow: hidden;
+}
+
+#footer img {
+    width: 150px;
+}
 

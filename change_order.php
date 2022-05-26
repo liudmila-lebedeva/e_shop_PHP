@@ -26,4 +26,4 @@ if (isset($cart[$key])) {
 // after the changing we put it back to the session
 $_SESSION['cart'] = $cart;  
 
-header("Location: cart.php");  // come backe to the cart page.
+header("Location: cart.php");  // come back to the cart page.
