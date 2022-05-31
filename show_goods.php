@@ -43,7 +43,7 @@ $key = filter_input(INPUT_GET, 'key');
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-         <div id="header">
+        <div id="header">
             <div class="shopping_cart_icon">
                 <a href="cart.php" title="Check my Shopping Bag"><img src="https://img.icons8.com/ios/50/000000/shopping-cart.png"/></a>
                 <?= $amount ?>
@@ -72,7 +72,7 @@ $key = filter_input(INPUT_GET, 'key');
         </div>
 
         <div class="container clear">
-            <?php if (isLogged()): ?>
+            <?php if (isLogged() && isAdmin()): ?>
 
                 <a href="editProductForm.php?id=<?= $key ?>" ><button class="grey_btn">Edit</button></a>
                 <a href="deleteProduct.php?id=<?= $key ?>" onclick="return confirm('are you sure?')"><button class="grey_btn">Delete</button></a>
@@ -81,11 +81,22 @@ $key = filter_input(INPUT_GET, 'key');
 
             <?php endif; ?>
         </div>
-        
-        
 
-
-
+        <div id="footer">
+            <div class="logo">
+                <a href="index.php"><img src="images/lg.png"></a>
+            </div>
+            <div class="slogan">
+                <h3>GreenShop</h3>
+                <p>Enjoy spring freshness whole year</p>
+            </div>
+            <div class="contacts">
+                <h3>Contact us</h3>
+                <p>85, rue Prince Jean, L-1111, Luxembourg</p>
+                <p>+35262100000</p>
+                <p>24/7</p>
+            </div>
+        </div>
 
 
     </body>

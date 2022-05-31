@@ -24,18 +24,7 @@ $id = mysqli_insert_id($con);
 
 $source = $_FILES["avatar"]["tmp_name"];
 $mimeType = exif_imagetype($source);
-//var_dump($mimeType);
-//exit();
 
-if ($mimeType == IMAGETYPE_JPEG or $mimeType == IMAGETYPE_PNG or $mimeType == IMAGETYPE_GIF) {
-    $dest = "./images/avatars/$id.png";
-    if ($source != "") {
-        move_uploaded_file($source, $dest);
-// or equivalent rename($source, $dest);
-    } else {
-        mysqli_query($con, "DELETE FROM users WHERE id='$id'");
-    }
-}
 
 mysqli_close($con);
 

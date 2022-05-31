@@ -110,6 +110,25 @@ $key = filter_input(INPUT_GET, 'key');
         <a href="complete_purchase.php"><button class="moving_btn">Complete Purchase</button></a>
         <br>
         <a href="index.php"><button class="moving_btn">Continue Shopping</button></a>
+        
+        
+        <div id="footer">
+            <div class="logo">
+                <a href="index.php"><img src="images/lg.png"></a>
+            </div>
+            <div class="slogan">
+                <h3>GreenShop</h3>
+                <p>Enjoy spring freshness whole year</p>
+            </div>
+            <div class="contacts">
+                <h3>Contact us</h3>
+                <p>85, rue Prince Jean, L-1111, Luxembourg</p>
+                <p>+35262100000</p>
+                <p>24/7</p>
+            </div>
+            
+        </div>
+
 
     </body>
 </html>

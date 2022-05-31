@@ -33,6 +33,7 @@ mysqli_close($con);
 
 
         <form action="saveEditedProduct.php" method="post" enctype="multipart/form-data">
+            <input type="hidden" name="id" value="<?= $id ?>">
             Name: <input type="text" name="name" value="<?= $product['name'] ?>">
             <br>
             Price: <input type="text" name="price" value="<?= $product['price'] ?>">
@@ -41,7 +42,7 @@ mysqli_close($con);
             <br>
             Product image: <input type="file" name="image" accept="image/*" >
             <br>
-            <input type="submit" value="Send">
+            <input type="submit" value="Send" onclick="return confirm('are you sure you want to change this item?')">
         </form>
     </body>
 </html>
